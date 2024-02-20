@@ -30,3 +30,38 @@ body {
     height: 40px;
     margin-right: 10px;
   }
+
+  .brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+ 
+  .midBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1f2949;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .upperSideBottom {
+    margin-top: 20px;
+  }
+ 
+  .query {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f2949;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+ 
+  .lowerside {
+    padding-top: 20px;
+  }
