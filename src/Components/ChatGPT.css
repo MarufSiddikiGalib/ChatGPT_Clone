@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .app {
+    display: flex;
+  }
+ 
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #161c2e;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+ 
+  .upperside {
+    padding: 20px;
+  }
+ 
+  .upperSideTop {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
