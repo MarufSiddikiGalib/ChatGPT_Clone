@@ -30,7 +30,7 @@ body {
     height: 40px;
     margin-right: 10px;
   }
-
+ 
   .brand {
     font-size: 20px;
     font-weight: bold;
@@ -64,4 +64,84 @@ body {
  
   .lowerside {
     padding-top: 20px;
+  }
+ 
+  .listItems {
+    padding: 10px;
+  }
+ 
+  .listItemImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+ 
+  .main {
+    flex-grow: 1;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+ 
+  .chats {
+    margin-bottom: 60px;
+  }
+ 
+  .chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+ 
+  .chat img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+ 
+  .txt {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+ 
+  .chatFooter {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background-color: #f0f2f5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .inp {
+    width: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+  }
+ 
+  .inp input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+ 
+  .send {
+    background-color: #1f2949;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+ 
+  .send img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
   }
