@@ -7,7 +7,7 @@ import home from './Components/assets/home.svg';
 import saved from './Components/assets/bookmark.svg';
 import rocket from './Components/assets/rocket.svg';
 import sendBtn from './Components/assets/send.svg';
-import userIcon from './Components/assets/user-icon.png';
+import userIcon from './Components/assets/user-icon.jpg';
 import gptImgLogo from './Components/assets/chatgptLogo.svg';
 
 
