@@ -45,6 +45,11 @@ function App() {
             {text: res, isBot: true}
           ]);
      }
+
+      const handleEnter = async (e) => {  //we can send message by pressing enter key by this function.
+        if(e.key =='Enter') await handle
+      }
+
   return (
     <div className="app">
       <div className="sidebar">
@@ -82,7 +87,7 @@ function App() {
            </div>
            <div className="chatFooter">
             <div className="inp">
-              <input type="text" placeholder = 'message ChatGPT...' value = {input} onChange = {(e) => {setInput(e.target.value)}} /> 
+              <input type="text" placeholder = 'message ChatGPT...' value = {input} onKeyDown={handleEnter} onChange = {(e) => {setInput(e.target.value)}} /> 
               <button className="send"> <img src={sendBtn} alt="Send" onClick ={handle } /></button>
             </div>
            </div>
