@@ -10,11 +10,13 @@ import sendBtn from './Components/assets/send.svg';
 import userIcon from './Components/assets/user-icon.jpg';
 import gptImgLogo from './Components/assets/chatgptLogo.svg';
 import { sendToOpenAI } from './Components/OpenAi';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 
 
 function App() {
+
+   const msgEnd = useRef(null);
   
     const [input, setInput] = useState("")
     const[message, setMessage] = useState([{
@@ -22,6 +24,10 @@ function App() {
       isBot: true,
 
     }]);
+
+    useEffect(()=>{
+        msgEnd.current.scrollIntoView();
+    },[message]); //If this message change the whole function will work.
 
      const handle = async() =>{
           const text = input;
@@ -31,7 +37,7 @@ function App() {
           ...message,
           {text, isBot: false}
          ])
-         
+
           const res = await sendToOpenAI(text)
           setMessage([
             ...message,
@@ -71,6 +77,7 @@ function App() {
                     <div key={i} className={message.isBot ? "chat bot" : "chat"} ><img className = 'chatImg' src={message.isBot ? gptImgLogo : userIcon} alt="" /><p className="txt">{message.text} </p> </div>
              )}
 
+             <div ref={msgEnd}></div>
 
            </div>
            <div className="chatFooter">
