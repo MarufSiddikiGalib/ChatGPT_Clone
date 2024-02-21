@@ -44,10 +44,10 @@ function App() {
              {/* <div className="chat"><img className = 'chatImg' src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div>
              <div className="chat bot"><img className = 'chatImg' src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div> */}
 
-             {/* {message.map((message, i) => 
+             {message.map((message, i) => 
 
                     <div key={i} className={message.isBot ? "chat bot" : "chat"} ><img className = 'chatImg' src={message.isBot ? gptImgLogo : userIcon} alt="" /><p className="txt">{message.text} </p> </div>
-             )} */}
+             )}
 
 
            </div>
