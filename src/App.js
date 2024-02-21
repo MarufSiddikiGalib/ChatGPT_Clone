@@ -15,8 +15,15 @@ import {useState} from 'react';
 
 
 function App() {
+  
+    const [input, setInput] = useState("")
+    const[message, setMessage] = useState([{
+      text: "Hi",
+      isBot: true,
 
-   
+    }]);
+
+     
   return (
     <div className="app">
       <div className="sidebar">
