@@ -18,4 +18,6 @@ export async function sendToOpenAI(message){
     });
  
     return res.data.choices[0].text;
+
+    
 }
