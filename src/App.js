@@ -23,7 +23,15 @@ function App() {
 
     }]);
 
-     
+     const handle = async() =>{
+      
+          const res = await sendToOpenAI(input)
+          setMessage([
+            ...message,
+            {text: input, isBot: false},
+            {text: res, isBot: true}
+          ]);
+     }
   return (
     <div className="app">
       <div className="sidebar">
