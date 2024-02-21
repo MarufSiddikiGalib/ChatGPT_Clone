@@ -9,9 +9,14 @@ import rocket from './Components/assets/rocket.svg';
 import sendBtn from './Components/assets/send.svg';
 import userIcon from './Components/assets/user-icon.jpg';
 import gptImgLogo from './Components/assets/chatgptLogo.svg';
+import { sendToOpenAI } from './Components/OpenAi';
+import {useState} from 'react';
+
 
 
 function App() {
+
+   
   return (
     <div className="app">
       <div className="sidebar">
@@ -35,13 +40,21 @@ function App() {
       </div>
       <div className="main">
            <div className="chats">
-             <div className="chat"><img src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div>
-             <div className="chat"><img src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div>
+
+             {/* <div className="chat"><img className = 'chatImg' src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div>
+             <div className="chat bot"><img className = 'chatImg' src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit nemo quidem error dolorum quia, modi voluptatem minima assumenda vel odit, provident a placeat. Praesentium!</p></div> */}
+
+             {/* {message.map((message, i) => 
+
+                    <div key={i} className={message.isBot ? "chat bot" : "chat"} ><img className = 'chatImg' src={message.isBot ? gptImgLogo : userIcon} alt="" /><p className="txt">{message.text} </p> </div>
+             )} */}
+
+
            </div>
            <div className="chatFooter">
             <div className="inp">
-              <input type="text" placeholder = 'message ChatGPT...'/> 
-              <button className="send"><img src={sendBtn} alt="Send" /></button>
+              <input type="text" placeholder = 'message ChatGPT...' value = {input} onChange = {(e) => {setInput(e.target.value)}} /> 
+              <button className="send"> <img src={sendBtn} alt="Send" onClick ={handle } /></button>
             </div>
            </div>
       </div>

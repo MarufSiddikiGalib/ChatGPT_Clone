@@ -146,3 +146,9 @@ body {
     object-fit: cover;
   
   }
+
+  .bot {
+    background: rgba(28, 30, 58, 1);
+    width: fit-content;
+    border-radius: 0.5rem;
+  }
