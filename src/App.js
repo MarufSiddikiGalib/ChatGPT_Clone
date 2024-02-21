@@ -27,10 +27,15 @@ function App() {
           const text = input;
           setInput('');
 
-          const res = await sendToOpenAI()
+         setMessage([
+          ...message,
+          {text, isBot: false}
+         ])
+         
+          const res = await sendToOpenAI(text)
           setMessage([
             ...message,
-            {text: input, isBot: false},
+            {text, isBot: false},
             {text: res, isBot: true}
           ]);
      }
